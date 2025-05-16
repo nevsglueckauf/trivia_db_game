@@ -1,4 +1,9 @@
 class Mock:
+    """ Mock data for:
+            - developing phase
+            - testing while development process
+            - continuous unit testing (CI/CD pipeline)
+    """
     
     def __init__(self):
         pass

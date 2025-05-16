@@ -1,3 +1,9 @@
+# Main python script running app 
+
+# AUTHOR: Sven Schrodt<sven.schrodt@schrodt.club
+# SINCE: 2025-05-16
+#
+# Question - representing single trivia game question
 from trivia import Trivia
 from entity import Question
 from mock import Mock

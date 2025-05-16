@@ -1,3 +1,7 @@
+# trivia python script managing http traffic 
+# AUTHOR: Sven Schrodt<sven.schrodt@schrodt.club
+# SINCE: 2025-05-16
+
 import json
 import requests
 
