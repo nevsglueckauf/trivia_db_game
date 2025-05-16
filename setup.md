@@ -1,9 +1,9 @@
 # Setup
 
-# Get Repo
+## Get Repo
 
-# VENV
+## VENV
 
-Activate virtual environment
+### Activate virtual environment
 <code>sven@Thanos trivia_db_game % </code><kbd>source .venv/bin/activate</kbd>
 
