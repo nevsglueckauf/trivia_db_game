@@ -3,7 +3,7 @@
 # SINCE: 2025-05-16
 #
 # Question - representing single trivia game question
-
+import random
 
 class Question:
     # valid indices (keys in this case)
@@ -15,5 +15,6 @@ class Question:
         self.dta = dta
         self.dta['answers'] = self.dta['incorrect_answers']
         self.dta['answers'].append(self.dta['correct_answer'])
+        random.shuffle(self.dta['answers'])
         
         

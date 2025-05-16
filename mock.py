@@ -1,3 +1,7 @@
+# Class for mocking data (avoiding consuming online API)
+#
+# AUTHOR: Sven Schrodt<sven.schrodt@schrodt.club
+# SINCE: 2025-05-16
 class Mock:
     """ Mock data for:
             - developing phase
