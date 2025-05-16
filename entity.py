@@ -3,13 +3,14 @@
 # SINCE: 2025-05-16
 #
 # Question - representing single trivia game question
+
 import random
 from typing import Any, Self,  Dict, List, Optional, Sequence, Tuple, Union
 
 class Question:
     
     # valid indices (keys in this case)
-    __idc = ['type', 'difficulty', 'category', 'question', 'correct_answer', 'incorrect_answers']
+    __idc = ['type', 'difficulty', 'category', 'question', 'correct_answer', 'incorrect_answers', 'answers']
     dta: dict
     given_answer:str
     result:bool
@@ -18,7 +19,7 @@ class Question:
         self.dta = dta
         self.dta['answers'] = self.dta['incorrect_answers']
         self.dta['answers'].append(self.dta['correct_answer'])
-        random.shuffle(self.dta['answers']) # get questions in a ranomized order
+        random.shuffle(self.dta['answers']) # get questions in a randomized order
         
     def answer(self, answer:str) -> Self:
         answer = self.__sanitize_answer(answer)
@@ -28,11 +29,12 @@ class Question:
         return self
     
     def solve(self):
+        if self.given_answer is None:
+            raise ValueError(f'Not an answer given yet !')
         self.result = (self.correct_answer == self.given_answer)    
         
     def __getattr__(self, key):
         self.__sanitize_key(key)
-        
         return self.dta[key]
         
          

@@ -3,11 +3,6 @@
 # SINCE: 2025-05-16
 from entity import Question
 
-
-
-
-
-
 class Runner:
     
     def __init__(self):
@@ -26,7 +21,8 @@ class CliRunner(Runner):
         """
         print('Cat:', question.category, '[Diff: ' + question.difficulty + ']')
         print('Question:', question.question)
-        print(question.incorrect_answers)
+        for idx, x in enumerate(question.answers):
+            print(idx+1, x)
         
         
 class App:
