@@ -7,7 +7,7 @@ ext_dox/
 .DS_Store
 .vscode
 README.local.md
-
+grube.*
 # locally tested PHP stuff 
 *.php
 

@@ -15,7 +15,7 @@ class Trivia:
         pass
     
     def get_questions_raw(self, number:int=10) -> dict:
-        response = requests.get(self.main_uri)
+        response = requests.get(self.main_uri.format(number))
         self.response_code=  response.status_code
         self.dta = response.json()
-        return self.dta
+        return self.dta['results']

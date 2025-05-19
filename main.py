@@ -13,12 +13,16 @@ game = app.App()
 #foo = app.Runner()
 #print(str(True),str(False))
 #exit(5363)
-#data = t.get_questions_raw(1)
+data  = t.get_questions_raw(2)
+print(data[0])   
+
+print(data[1])
+
+exit(666)
 
 #print(data['results'][0])
 data = m.get_question_multiple()
 #data= m.get_question_bool()
-#exit(666)
 #print(t.response_code)
 q1 = Question(data)
 q1.answer(100)
