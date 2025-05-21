@@ -2,37 +2,27 @@
 # AUTHOR: Sven Schrodt<sven.schrodt@schrodt.club
 # SINCE: 2025-05-16
 from trivia import Trivia
-from entity import Question
+from entity import Question, QuestionList
 from mock import Mock
 import app 
+import html
 #from app import App
 
-t = Trivia()
-m = Mock()
-game = app.App()
-#foo = app.Runner()
-#print(str(True),str(False))
-#exit(5363)
-data  = t.get_questions_raw(2)
-print(data[0])   
+mock = Mock()
+list = QuestionList(mock.questions)
+for item in mock.questions:
+    print(html.unescape(item['question']))
 
-print(data[1])
 
-exit(666)
 
-#print(data['results'][0])
-data = m.get_question_multiple()
-#data= m.get_question_bool()
-#print(t.response_code)
-q1 = Question(data)
-q1.answer(100)
-game.runner.render(q1)
-#print(q1.correct_answer)
-#print(type(q1.correct_answer), type(q1.given_answer))
-#print(q1.correct_answer == q1.given_answer)
 
-q1.solve()
-print(q1.result)
 
-# print(q1.dta['answers'])
-#print(type(q1.dta['incorrect_answers']), q1.dta['incorrect_answers'])
+exit(33)
+dta = list.filter_by('difficulty').equals('hard')
+#.filterable.head(27)
+#print(dta)
+#
+#filter_by('type').equals('boolean')
+#print(dta)
+single_q = Question(dta.loc[19])
+print(single_q)

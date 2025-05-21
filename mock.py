@@ -13,7 +13,7 @@ class Mock:
             - testing while development process
             - continuous unit testing (CI/CD pipeline)
     """
-    question:list
+    questions:list
     filterable:pd.DataFrame
     mock_file:str = 'data/question.json'  
     curr_fltr:str
@@ -21,8 +21,8 @@ class Mock:
     def __init__(self):
         tmp = json.load(open(self.mock_file))
     
-        self.question = tmp['results']
-        self.filterable = pd.DataFrame(data = self.question, columns=self.question[0].keys()) 
+        self.questions = tmp['results']
+        self.filterable = pd.DataFrame(data = self.questions, columns=self.question[0].keys()) 
        
     def get_question_bool(self):
         return {'type': 'boolean', 'difficulty': 'medium', 'category': 'History', 'question': 'Ottoman Empire was created in 1299.', 'correct_answer': 'True', 'incorrect_answers': ['False']}

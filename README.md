@@ -22,7 +22,9 @@ Tiny trivia game consuming Open Trivia DB (https://opentdb.com/) API
 
    - CLI mode for plain text  playing in a shell 
 
-## Development environment 
+## Appendix
+
+### Development environment 
 
  Chronicler's duty: 
 
@@ -37,6 +39,52 @@ Tiny trivia game consuming Open Trivia DB (https://opentdb.com/) API
  - RDBMS: Sqlite version 3.43.2
  - CI/CD pipeline: Jenkins/travis-ci
 
+
+
+### Directory structure
+
+
+
+.
+├── __pycache__
+│   ├── app.cpython-313.pyc
+│   ├── entity.cpython-313.pyc
+│   ├── mock.cpython-313.pyc
+│   └── trivia.cpython-313.pyc
+├── app.py
+├── APy.py
+├── data
+│   └── question.json
+├── doq
+│   ├── dad.md
+│   └── setup.md
+├── entity.py
+├── grube.py
+├── LICENSE
+├── main.py
+├── mock.py
+├── README.md
+├── req.txt
+├── test_mock.py
+├── trivia.py
+└── url.php
+
+
+
+ 
+### LOC
+
+-------------------------------------------------------------------------------
+Language                     files          blank        comment           code
+-------------------------------------------------------------------------------
+Python                           8             63             52            155
+Markdown                         3             45              0            115
+PHP                              1              3              0              3
+JSON                             1              0              0              1
+Text                             1              0              0              1
+-------------------------------------------------------------------------------
+SUM:                            14            111             52            275
+-------------------------------------------------------------------------------
 
  Nuff said for now & Glück auf! 
 
