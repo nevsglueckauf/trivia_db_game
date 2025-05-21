@@ -43,7 +43,7 @@ Tiny trivia game consuming Open Trivia DB (https://opentdb.com/) API
 
 ### Directory structure
 
-
+<pre>
 
 .
 ├── __pycache__
@@ -68,12 +68,13 @@ Tiny trivia game consuming Open Trivia DB (https://opentdb.com/) API
 ├── test_mock.py
 ├── trivia.py
 └── url.php
-
+</pre>
 
 
  
 ### LOC
 
+<pre>
 -------------------------------------------------------------------------------
 Language                     files          blank        comment           code
 -------------------------------------------------------------------------------
@@ -85,6 +86,8 @@ Text                             1              0              0              1
 -------------------------------------------------------------------------------
 SUM:                            14            111             52            275
 -------------------------------------------------------------------------------
+
+</pre>
 
  Nuff said for now & Glück auf! 
 
